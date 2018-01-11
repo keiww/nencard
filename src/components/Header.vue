@@ -23,9 +23,10 @@ header {
   padding: 15px;
 }
 h1 {
+  margin-bottom: 0;
   font-size: 24px;
   font-weight: 100;
   text-align: center;
-  font-family: Monaco, 'Roboto Mono', monospace;
+  font-family: Menlo, 'Roboto Mono', monospace;
 }
 </style>

@@ -20,6 +20,7 @@ export default {
     },
     style () {
       return {
+        opacity: this.card.opacity,
         background: this.card.color,
         transform: `rotate(${this.card.deg || 0}deg) translate3d(${this.card.translateX || 0}, ${this.card.translateY || 0}, 0)`
       }
@@ -44,14 +45,15 @@ export default {
   color: #fff;
   transform-origin: 85% 90%;
   z-index: 0;
+  user-select: none;
   &:after {
     display: block;
     content: "";
     position: absolute;
     left: 85%;
     top: 90%;
-    width: 10vw;
-    height: 10vw;
+    width: 36px;
+    height: 36px;
     transform: translate(-50%, -50%);
     border-radius: 100%;
     background: #fff;
@@ -69,8 +71,9 @@ export default {
 ruby {
   display: block;
   margin-bottom: 1em;
-  font-size: 15vw;
+  font-size: 52px;
   font-weight: bold;
+  user-select: initial;
   rt{
     font-size: .3em;
     opacity: .9;
@@ -79,13 +82,13 @@ ruby {
 .meaning {
   margin: 0;
   flex: 1;
-  font-size: 6vw;
-  font-family: Monaco, 'Roboto Mono', monospace;
+  font-size: 24px;
+  font-family: Menlo, 'Roboto Mono', monospace;
   opacity: .8;
 }
 .level {
-  font-size: 6vw;
-  font-family: Monaco, 'Roboto Mono', monospace;
+  font-size: 24px;
+  font-family: Menlo, 'Roboto Mono', monospace;
   opacity: .8;
 }
 </style>

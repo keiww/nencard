@@ -60,6 +60,7 @@ export default {
         word: getRandomWord(),
         color: getRandomColor(),
         transition: false,
+        opacity: 1,
         deg: 0,
         translateX: 0,
         translateY: 0
@@ -103,6 +104,7 @@ export default {
       if (Math.abs(dragingCard.deg) > 20) {
         dragingCard.transition = true
         dragingCard.deg *= 2
+        dragingCard.opacity = 0
         if (dragingCard.deg > 0) {
           dragingCard.translateX = '20%'
           dragingCard.translateY = '-100%'
@@ -145,6 +147,8 @@ export default {
   left: 50%;
   width: 84vw;
   height: 75vh;
-  margin-left: -42vw;
+  max-height: 560px;
+  max-width: 320px;
+  transform: translateX(-50%);
 }
 </style>
