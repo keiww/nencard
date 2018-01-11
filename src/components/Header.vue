@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>REME・CARDS</h1>
+    <h1>NEN CARD</h1>
     <svg height='1' :width='progress + "%"'>
       <line x1='0' y1='0' x2='100%' y2='0' style='stroke:rgba(0,0,0,.6);stroke-width:0.8' />
     </svg>
