@@ -7,7 +7,7 @@
     "cleanghpage": "rm -rf docs",
     "start": "NODE_ENV=development parcel index.html",
     "build": "NODE_ENV=production yarn clean && parcel build index.html --no-cache --public-url /",
-    "ghpage": "NODE_ENV=production yarn cleanghpage &&  parcel build index.html --no-cache --public-url / --out-dir docs",
+    "ghpage": "NODE_ENV=production yarn cleanghpage && parcel build index.html --no-cache --public-url / --out-dir docs",
     "serve": "serve ./dist"
   },
   "devDependencies": {
